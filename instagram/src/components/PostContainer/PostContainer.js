@@ -5,17 +5,20 @@ import './PostContainer.css';
 
 
 const PostContainer = props => {
-    console.log(props)
+    // console.log(props)
     return (
         <div className="post-container">
-            PostContainer
+            <div className="post-header">
+                <img src={props.data.imageUrl} alt=""/>
+                <p>{props.data.username}</p>
+            </div>
             <CommentSection comments={props.data.comments} />
         </div>
     )
 };
 
 PostContainer.propTypes = {
-    data: PropTypes.shape({
+        data: PropTypes.shape({
         username: PropTypes.string, 
         imageUrl: PropTypes.string, 
         likes: PropTypes.number, 
