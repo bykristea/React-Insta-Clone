@@ -1,6 +1,21 @@
 .post-container {
     border: 1px solid grey;
-    margin: 20px 0;
-    padding: 10px 0;
-    height: 100%;
+    height: auto;
+    width: 100%
+}
+
+
+.post-header {
+    display: grid;
+    grid-template-rows: 12px 12px 12px;
+    margin: 20px;
+
+}
+
+.profile {
+    border-radius: 50%;
+}
+
+.image {
+    margin-top: 100px;
 }

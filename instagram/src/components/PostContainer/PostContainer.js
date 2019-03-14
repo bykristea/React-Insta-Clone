@@ -9,10 +9,17 @@ const PostContainer = props => {
     return (
         <div className="post-container">
             <div className="post-header">
-                <img src={props.data.imageUrl} alt=""/>
-                <p>{props.data.username}</p>
+                <img className="profile" src={props.data.thumbnailUrl} alt=""/>
+                <p className="username">{props.data.username}</p>
             </div>
-            <CommentSection comments={props.data.comments} />
+            <img className="image" src={props.data.imageUrl} alt="" />
+                <div className="likes">
+                <i className="far fa-heart"></i>
+                <i className="far fa-comment"></i>
+                <p className='likes'>{props.data.likes} likes</p>
+             </div>
+            <CommentSection comments={props.data.comments} data={props.data} />
+
         </div>
     )
 };

@@ -1,4 +1,12 @@
+.comment {
+    display: flex;
+}
+
 .comment-section {
-    border: 1px solid black;
+    border-top: 1px solid black;
+    width: 100%;
+
+
+    
 }
 

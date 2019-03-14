@@ -1,9 +1,14 @@
 .App {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-row-gap: 50px;
   justify-content: center;
 }
 
+
+.App-header {
+  display: flex;
+  justify-content: space-evenly;
+ 
+}
 
