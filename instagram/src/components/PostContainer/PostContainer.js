@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import CommentSection from '../CommentSection/CommentSection';
 import './PostContainer.css';
+import heart from '../../img/heart-regular.svg';
+import solidHeart from '../../img/heart-solid.svg';
 
 
 // const PostContainer = props => {
@@ -58,7 +60,7 @@ class PostContainer extends Component {
              </div>
              <img className="image" src={this.state.data.imageUrl} alt="" />
                  <div className="likes">
-                 <i {...this.state.likeStatus ? <i class="far fa-heart"></i> : <i class="fas fa-heart"></i>} onClick={this.clickedImg}></i>
+                 <img src={this.state.likeStatus ? solidHeart : heart} alt="heart" width="20" onClick={this.clickedImg}/>
                  <i className="far fa-comment"></i>
                  <p className='likes'>{this.state.likes} likes</p>
               </div>
