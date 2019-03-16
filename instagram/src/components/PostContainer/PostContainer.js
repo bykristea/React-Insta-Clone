@@ -38,7 +38,6 @@ class PostContainer extends Component {
 
     clickedImg = () =>{
         if (this.state.likeStatus === false){
-          console.log("Inside if")
           this.setState({
             likeStatus: true,
             likes: this.state.likes + 1,
