@@ -1,11 +1,12 @@
-.input {
+.search {
     display: flex;
+    /* justify-content: space-between; */
     align-items: center;
     width: 37%;
 }
 
 input {
-    width: 100%;
+    /* width: 100%; */
     background: #fafafa;
     border: solid 1px #dbdbdb;
     border-radius: 3px;
@@ -17,3 +18,9 @@ input {
     text-align: center;
     z-index: 2;
 } 
+
+.App-header {
+    display: flex;
+    justify-content: space-evenly;
+   
+  }

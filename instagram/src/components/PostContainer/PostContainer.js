@@ -33,6 +33,7 @@ class PostContainer extends Component {
             data: props.data,
             likes:props.data.likes, 
             likeStatus: false, 
+            timestamp:props.data.timestamp
         }
     }
 
@@ -64,20 +65,14 @@ class PostContainer extends Component {
                  <p className='likes'>{this.state.likes} likes</p>
               </div>
             <CommentSection comments={this.state.data.comments} data={this.state.data} />
-
+            <p className="timestamp">{this.state.timestamp}</p>   
          </div> 
         )
     }
 }
 
 PostContainer.propTypes = {
-        data: PropTypes.shape({
-        username: PropTypes.string, 
-        imageUrl: PropTypes.string, 
-        likes: PropTypes.number, 
-        timestamp: PropTypes.string, 
-
-    })
+        data: PropTypes.object
 }
 
 export default PostContainer;
