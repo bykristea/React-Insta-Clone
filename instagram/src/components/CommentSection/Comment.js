@@ -3,9 +3,13 @@ import PropTypes from 'prop-types';
 // import './CommentSection.css';
 import styled from 'styled-components';
 
+
+const CommentContainer = styled.div `
+display: flex;
+`;
 const UserName = styled.p `
   font-weight: bold;
-  
+  text-align: left;
   margin: 0 5px;
   align-content: center;
 `;
@@ -21,11 +25,11 @@ class Comment extends Component {
     render() {
         return (
             <div>
-            <div className="comment">
+            <CommentContainer>
                 <UserName>{this.state.username}</UserName>
                 <p className="text-comment">{this.state.text}</p>
                 
-            </div>
+            </CommentContainer>
             {/* <input type="text" value="comment"/> */}
 
             </div>
