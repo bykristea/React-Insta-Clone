@@ -1,29 +1,66 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SearchBar from './SearchBar.css';
+
+import styled from 'styled-components';
+
+ const Header = styled.header `
+    border-bottom: 1px solid #3333;
+    height: 60px;
+    display: flex;
+ `;
+
+ const LogoHeader = styled.div`
+
+`;
+
+const LogoImage = styled.div`
+  
+`;
+
+const Divider = styled.span`
+ 
+`;
+
+const InputWrapper = styled.div`
+
+`;
+
+const SearchInput = styled.input`
+  height: 30px;
+  width: 300px;
+  text-align: center;
+  margin-right: 20px;
+`;
+
+const IconsWrapper = styled.div`
+  
+`;
+const SearchIcon = styled.i`
+  
+`;
 
 const Search = (props) => {
  return (
-    <div className="search">
+    
        
-        <header className="App-header">
-        <div className="instagram">
-          <span className="logo">
+        <Header>
+        <LogoHeader>
+          <LogoImage>
             <i className="fas fa-camera-retro" />
-          </span>
-          <span className="line">│</span>
-          <span className="title">Insta</span>
-        </div>
+          </LogoImage>
+          <Divider>│</Divider>
+          <LogoImage>Insta</LogoImage>
+        </LogoHeader>
 
-        <input type="text" name='searchPosts' value={props.text} onChange={ props.changed} placeholder="🔍 Search" />
+        <SearchInput type="text" name='searchPosts' value={props.text} onChange={ props.changed} placeholder="🔍 Search" />
 
-        <div className="icons">
+        <IconsWrapper>
           <i className="far fa-compass" />
           <i className="far fa-heart" />
           <i className="far fa-user" />
-        </div>
-      </header>
-      </div>
+        </IconsWrapper>
+      </Header>
+      
   )
 }
 

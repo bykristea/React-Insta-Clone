@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
+import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import logo from './../../img/Instagram_logo.png';
 import './Login.css';
+import styled from 'styled-components';
+
 
 class Login extends Component {
     constructor(props) {
@@ -23,19 +27,22 @@ class Login extends Component {
     render() {
         return (
             <form className="login">
-                <h3>InstaClone</h3>
+                <img src={logo} width="100px"/>
                 <p>Please Login</p>
-                <div className="login-user">
-                    <input
+                
+                    <FormGroup>
+                    <Input
                         text="text"
                         placeholder="Username"
                         name="username"
                         value={this.state.username}
                         onChange={this.handleChange}
                     />
-                </div>
-                <div className="login-password">
-                    <input 
+                    </FormGroup>
+                
+                <FormGroup>
+               
+                    <Input 
                         type="password"
                         placeholder="Password"
                         name="password"
@@ -45,10 +52,11 @@ class Login extends Component {
                     />
                     <br />
 
-                    <button onClick={this.handleLogin}>
+                    <Button color="primary" size="lg" block onClick={this.handleLogin}>
                         Log In
-                    </button>
-                </div>
+                    </Button>
+                    </FormGroup>
+                
             </form>
         );
     }
