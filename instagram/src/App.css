@@ -1,8 +1,10 @@
 .App {
+  width: 700px;
   text-align: center;
-  display: grid;
-  grid-row-gap: 50px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
 }
 
 
