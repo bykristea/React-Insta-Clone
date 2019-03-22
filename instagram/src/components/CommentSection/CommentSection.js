@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Comment from './Comment';
-// import './CommentSection.css';
+import './CommentSection.css';
 
 // const CommentSection = props => {
 //     return (
@@ -43,7 +43,7 @@ class CommentSection extends Component {
         event.preventDefault()
         let newArray = [...this.state.comments]
         newArray.push({
-          username: this.state.username,
+          username: "krgamel",
           text: this.state.comment,
         })
         this.setState({
