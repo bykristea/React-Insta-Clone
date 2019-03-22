@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './CommentSection.css';
+// import './CommentSection.css';
+import styled from 'styled-components';
 
+const UserName = styled.p `
+  font-weight: bold;
+  
+  margin: 0 5px;
+  align-content: center;
+`;
 class Comment extends Component {
     constructor(props){
         super(props);
@@ -15,7 +22,7 @@ class Comment extends Component {
         return (
             <div>
             <div className="comment">
-                <p className="username">{this.state.username}</p>
+                <UserName>{this.state.username}</UserName>
                 <p className="text-comment">{this.state.text}</p>
                 
             </div>

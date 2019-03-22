@@ -43,7 +43,7 @@ class CommentSection extends Component {
         event.preventDefault()
         let newArray = [...this.state.comments]
         newArray.push({
-          username: "krgamel",
+          username: this.state.username,
           text: this.state.comment,
         })
         this.setState({
