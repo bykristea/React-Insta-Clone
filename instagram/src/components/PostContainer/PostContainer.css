@@ -1,0 +1,33 @@
+.post-container {
+    border: 1px solid grey;
+    height: auto;
+    width: 100%; 
+    margin-bottom: 50px;
+   
+}
+
+
+.post-header {
+    display: grid;
+    grid-template-rows: 12px 12px 12px;
+    margin: 20px;
+
+}
+
+.profile {
+    border-radius: 50%;
+}
+
+.image {
+    margin-top: 20px;
+}
+
+.profile {
+    width: 60px;
+}
+
+.username {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 80px;
+}
